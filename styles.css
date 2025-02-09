@@ -226,7 +226,7 @@ p {
 
 /* ad-container の余白調整 */
 .ad-container {
-    padding: 0; /* 内部の余白を完全に無くす */
+    padding: 12px; /* 内部の余白を完全に無くす */
     margin-bottom: 0; /* 下部余白を無くす */
     line-height: 1.2; /* 行間を縮めて詰める */
 }
@@ -240,7 +240,7 @@ p {
 /* ad-info 内のテキストの余白調整 */
 .ad-container .ad-info h3,
 .ad-container .ad-info p {
-    margin-bottom: 5px; /* 上下の余白を最小限に調整 */
+    margi: 24px 12px; /* 上下の余白を最小限に調整 */
     line-height: 1.2; /* 行間を縮めて詰める */
 }
 
