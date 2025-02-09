@@ -224,28 +224,29 @@ p {
     margin-bottom: 0; /* cta内の段落間に余白を追加しない */
 }
 
-/* ad-container の中身を詰める */
+/* ad-container の余白調整 */
 .ad-container {
-    padding: 10px; /* 内部の余白を狭くする */
+    padding: 0; /* 内部の余白を完全に無くす */
     margin-bottom: 0; /* 下部余白を無くす */
+    line-height: 1.2; /* 行間を縮めて詰める */
 }
 
-/* ad-info 内の余白を調整して詰める */
+/* ad-info 内の余白調整 */
 .ad-container .ad-info {
-    padding: 5px 0; /* 上下の余白を狭めて詰める */
+    padding: 5px 0; /* 上下の余白を狭くして詰める */
     margin-bottom: 0; /* 下部余白を無くす */
 }
 
-/* ad-info 内の要素を詰めて隙間を少なくする */
+/* ad-info 内のテキストの余白調整 */
 .ad-container .ad-info h3,
 .ad-container .ad-info p {
-    margin-bottom: 10px; /* 上下の余白を詰める */
+    margin-bottom: 5px; /* 上下の余白を最小限に調整 */
 }
 
-/* 広告内のボタンの余白も調整 */
+/* ボタンの余白調整 */
 .ad-container .cta-button {
-    padding: 10px 20px; /* ボタンの内側の余白を少なく */
-    margin-top: 0; /* ボタンの上の余白を無くす */
+    padding: 8px 15px; /* ボタンの内側の余白を少なく */
+    margin-top: 5px; /* ボタンの上の余白を調整 */
 }
 
 /* レスポンシブデザイン */
