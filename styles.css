@@ -1,233 +1,121 @@
-/* 基本設定 */
-:root {
-    --main-color: #2980b9;
-    --highlight-color: #e74c3c;
-    --cta-color: #f39c12;
-    --bg-color: #f0f0f0;
-    --font-size-base: 1.1rem;
-    --font-size-lg: 1.8rem;
-    --font-size-xl: 2.5rem;
-    --font-family: 'Arial', sans-serif;
-    --line-height: 1.6;
-}
-
+/* 基本スタイル */
 body {
-    font-family: var(--font-family);
-    background-color: var(--bg-color);
-    color: #333;
-    line-height: var(--line-height);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
-header {
-    background: var(--main-color);
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+h1, h2 {
+    color: #333;
 }
 
-header h1 {
-    font-size: var(--font-size-xl);
-    margin: 0;
-    line-height: 1.2;
-}
-
-/* 共通スタイル */
-.text-main {
-    color: var(--main-color);
-}
-
-.text-highlight {
-    color: var(--highlight-color);
-    font-weight: bold;
-}
-
-p {
-    font-size: var(--font-size-base);
-    margin-bottom: 60px;
-    line-height: 1.8;
-}
-
-/* コンテンツとサイドバー */
+/* コンテンツエリア */
 .content-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     margin: 20px;
-    margin-bottom: 120px; /* コンテンツ間の間隔 */
 }
 
 .content {
     width: 70%;
-    max-width: 800px;
-    background-color: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
 }
 
 .sidebar-wrapper {
-    flex: 0 0 320px;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: -3px 0 10px rgba(0, 0, 0, 0.2);
-    border-left: 3px solid #ddd;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    display: flex;
-    flex-direction: column;
-    height: fit-content;
-    margin: 0 36px 21px;
+    width: 28%;
 }
 
-/* セクション */
-h2 {
-    font-size: var(--font-size-lg);
-    color: var(--main-color);
-    border-bottom: 2px solid var(--main-color);
-    margin-bottom: 15px;
-    line-height: 1.5;
+.section {
+    margin-bottom: 20px;
 }
 
-section h2 {
-    line-height: 1.2;
+.highlight {
+    color: #ff6347;
+    font-weight: bold;
 }
 
-/* 広告 */
+/* 広告関連 */
 .ad-container {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background-color: #ecf0f1;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
     border-radius: 8px;
-    padding: 12px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .ad-container img {
-    width: 100%;
-    border-radius: 8px;
+    max-width: 150px;
+    margin-right: 20px;
 }
 
-.ad-info h3,
-.ad-info p {
-    font-size: 1.2rem;
-    color: var(--main-color);
-    line-height: 1.2;
-    margin: 24px 12px;
+.ad-info {
+    flex-grow: 1;
 }
 
-.ad-container .cta-button {
-    background-color: var(--cta-color);
-    color: white;
-    padding: 8px 15px;
-    text-align: center;
-    border-radius: 5px;
+.cta-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
     text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-.ad-container .cta-button:hover {
-    background-color: #e67e22;
+.cta-button:hover {
+    background-color: #0056b3;
 }
 
-/* 動画 */
-.video {
-    text-align: center;
-    margin-top: 30px;
+/* サイドバー */
+.sidebar {
+    background-color: #fff;
     padding: 20px;
-    background-color: #ecf0f1;
     border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.sidebar h2 {
+    margin-top: 0;
+}
+
+/* 動画エリア */
 .video iframe {
     width: 100%;
-    max-width: 800px;
-    height: 450px;
-    border-radius: 8px;
+    height: 315px;
+    border: none;
 }
 
 /* フローティングバナー */
 .floating-banner {
-    background-color: var(--main-color);
-    color: white;
-    text-align: center;
-    padding: 10px 0;
     position: fixed;
     bottom: 0;
+    left: 0;
     width: 100%;
-    box-sizing: border-box;
-    z-index: 1000;
-}
-
-.floating-banner p {
-    margin: 0;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.cta {
-    background-color: var(--cta-color);
-    padding: 15px;
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border-radius: 5px;
-    margin-top: 30px;
-}
-
-.cta a {
+    background-color: #333;
     color: white;
-    text-decoration: none;
+    text-align: center;
+    padding: 10px;
 }
 
-.cta a:hover {
-    text-decoration: underline;
-}
-
-/* ブロック引用 */
-blockquote {
-    background-color: #f5f5f5;
-    border-left: 5px solid #007bff;
-    padding: 10px 15px;
-    margin: 10px 0;
-    font-style: italic;
-    color: #333;
-}
-
-blockquote p {
-    margin: 0;
-}
-
-/* 行間の設定 */
-body, p, blockquote {
-    line-height: 4.0;
-}
-
-/* レスポンシブデザイン */
+/* レスポンシブ対応 */
 @media (max-width: 768px) {
     .content-container {
-        align-items: center;
+        flex-direction: column;
     }
-
+    
     .content {
-        width: 90%;
+        width: 100%;
     }
-
+    
     .sidebar-wrapper {
         width: 100%;
-        position: relative;
-        box-shadow: none;
-        border-left: none;
-    }
-
-    .sidebar {
         margin-top: 20px;
     }
-
-    h2 {
-        font-size: 1.5rem; /* スマホ用に調整 */
+    
+    .sidebar {
+        margin-top: 20px;
     }
 }
