@@ -194,6 +194,17 @@ blockquote p {
     padding: 0;
 }
 
+/* 全体の行間を広げる */
+body, p, blockquote {
+    line-height: 1.6;
+}
+
+/* 反応のブロック引用に少し広めの行間を追加 */
+.reaction-container blockquote p {
+    margin-bottom: 10px; /* 段落間のスペースを調整 */
+}
+
+
 /* レスポンシブデザイン */
 @media (max-width: 768px) {
     .content-container {
