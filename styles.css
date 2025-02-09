@@ -26,6 +26,7 @@ header h1 {
     flex-wrap: wrap;
     justify-content: center;
     margin: 20px;
+    margin-bottom: 64px;
 }
 
 .content {
@@ -42,6 +43,7 @@ header h1 {
     flex: 0 0 320px;
     background-color: #fff;
     padding: 0px 20px;
+    padding-bottom: 20px;
     box-shadow: -3px 0 10px rgba(0, 0, 0, 0.2);
     border-left: 3px solid #ddd;
     position: sticky;
@@ -51,6 +53,7 @@ header h1 {
     flex-direction: column;
     height: fit-content;
     margin: 0px 36px;
+    margin-bottom: 21px;
 }
 
 .sidebar {
