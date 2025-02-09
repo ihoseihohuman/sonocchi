@@ -41,7 +41,7 @@ header h1 {
 .sidebar-wrapper {
     flex: 0 0 320px;
     background-color: #fff;
-    padding: 20px;
+    padding: 0px 20px;
     box-shadow: -3px 0 10px rgba(0, 0, 0, 0.2);
     border-left: 3px solid #ddd;
     position: sticky;
@@ -144,7 +144,7 @@ p {
     background-color: #2980b9;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
