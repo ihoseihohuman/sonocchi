@@ -219,9 +219,14 @@ p {
     margin-bottom: 80px; /* 各セクションの間に大きなスペースを追加 */
 }
 
-/* ctaとad-containerには間隔を広げない */
-.cta, .ad-container {
-    margin-bottom: 30px; /* 少し余白を追加、広げない */
+/* cta の中身に余白を与えずにスタイル */
+.cta p {
+    margin-bottom: 0; /* cta内の段落間に余白を追加しない */
+}
+
+/* ad-container の中身にも余白を追加しない */
+.ad-container .ad-info {
+    margin-bottom: 0; /* 広げない */
 }
 
 /* レスポンシブデザイン */
