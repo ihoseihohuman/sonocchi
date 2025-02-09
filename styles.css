@@ -196,13 +196,29 @@ blockquote p {
 
 /* 全体の行間を広げる */
 body, p, blockquote {
-    line-height: 1.6;
+    line-height: 2.0; /* 行間を大きくしてスカスカ感を軽減 */
 }
 
-/* 反応のブロック引用に少し広めの行間を追加 */
-.reaction-container blockquote p {
-    margin-bottom: 10px; /* 段落間のスペースを調整 */
+/* 段落の間隔を広げる */
+p {
+    margin-bottom: 20px; /* 各段落の下にスペースを追加 */
 }
+
+/* 反応のブロック引用に広めの行間を設定 */
+.reaction-container blockquote p {
+    margin-bottom: 15px; /* コメント間のスペースを調整 */
+}
+
+/* サイドバー内の要素にも少し広めの行間を追加 */
+.sidebar-wrapper, .sidebar {
+    line-height: 2.0; /* サイドバーのテキスト行間も広げる */
+}
+
+/* コンテンツ全体の余白を広げる */
+.content-container {
+    margin-bottom: 40px; /* コンテンツ間の間隔を広げる */
+}
+
 
 
 /* レスポンシブデザイン */
