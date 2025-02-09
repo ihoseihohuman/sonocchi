@@ -219,6 +219,11 @@ p {
     margin-bottom: 80px; /* 各セクションの間に大きなスペースを追加 */
 }
 
+/* ctaとad-containerには間隔を広げない */
+.cta, .ad-container {
+    margin-bottom: 30px; /* 少し余白を追加、広げない */
+}
+
 /* レスポンシブデザイン */
 @media (max-width: 768px) {
     .content-container {
