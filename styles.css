@@ -250,6 +250,24 @@ p {
     margin: 5px; /* ボタンの上の余白を調整 */
 }
 
+/* ヘッダーの行間を狭く */
+header h1 {
+    line-height: 1.2; /* 行間を狭く */
+    margin-bottom: 10px; /* ヘッダーの下部余白を少し調整 */
+}
+
+/* セクション見出しの行間を狭く */
+section h2 {
+    line-height: 1.2; /* 行間を狭く */
+    margin-bottom: 15px; /* 見出しとコンテンツの間隔を調整 */
+}
+
+/* フローティングバナーの行間を狭く */
+.floating-banner p {
+    line-height: 1.2; /* 行間を狭く */
+    margin-top: 10px;
+}
+
 /* レスポンシブデザイン */
 @media (max-width: 768px) {
     .content-container {
