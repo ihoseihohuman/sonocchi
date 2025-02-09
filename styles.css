@@ -1,23 +1,52 @@
 /* 基本設定 */
+:root {
+    --main-color: #2980b9;
+    --highlight-color: #e74c3c;
+    --cta-color: #f39c12;
+    --bg-color: #f0f0f0;
+    --font-size-base: 1.1rem;
+    --font-size-lg: 1.8rem;
+    --font-size-xl: 2.5rem;
+    --font-family: 'Arial', sans-serif;
+    --line-height: 1.6;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
     color: #333;
-    line-height: 1.6;
+    line-height: var(--line-height);
     margin: 0;
     padding: 0;
 }
 
 header {
-    background: #2980b9;
+    background: var(--main-color);
     color: white;
     padding: 20px 0;
     text-align: center;
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: var(--font-size-xl);
     margin: 0;
+    line-height: 1.2;
+}
+
+/* 共通スタイル */
+.text-main {
+    color: var(--main-color);
+}
+
+.text-highlight {
+    color: var(--highlight-color);
+    font-weight: bold;
+}
+
+p {
+    font-size: var(--font-size-base);
+    margin-bottom: 60px;
+    line-height: 1.8;
 }
 
 /* コンテンツとサイドバー */
@@ -26,7 +55,7 @@ header h1 {
     flex-wrap: wrap;
     justify-content: center;
     margin: 20px;
-    margin-bottom: 64px;
+    margin-bottom: 120px; /* コンテンツ間の間隔 */
 }
 
 .content {
@@ -42,8 +71,7 @@ header h1 {
 .sidebar-wrapper {
     flex: 0 0 320px;
     background-color: #fff;
-    padding: 0px 20px;
-    padding-bottom: 20px;
+    padding: 20px;
     box-shadow: -3px 0 10px rgba(0, 0, 0, 0.2);
     border-left: 3px solid #ddd;
     position: sticky;
@@ -52,20 +80,20 @@ header h1 {
     display: flex;
     flex-direction: column;
     height: fit-content;
-    margin: 0px 36px;
-    margin-bottom: 21px;
+    margin: 0 36px 21px;
 }
 
-.sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+/* セクション */
+h2 {
+    font-size: var(--font-size-lg);
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    margin-bottom: 15px;
+    line-height: 1.5;
 }
 
-.sidebar h2 {
-    font-size: 1.5rem;
-    color: #2980b9;
-    margin-bottom: 10px;
+section h2 {
+    line-height: 1.2;
 }
 
 /* 広告 */
@@ -75,7 +103,7 @@ header h1 {
     gap: 10px;
     background-color: #ecf0f1;
     border-radius: 8px;
-    padding: 15px;
+    padding: 12px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -84,46 +112,25 @@ header h1 {
     border-radius: 8px;
 }
 
-.ad-info h3 {
-    font-size: 1.2rem;
-    color: #2980b9;
-}
-
+.ad-info h3,
 .ad-info p {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    color: var(--main-color);
+    line-height: 1.2;
+    margin: 24px 12px;
 }
 
-.cta-button {
-    background-color: #f39c12;
+.ad-container .cta-button {
+    background-color: var(--cta-color);
     color: white;
-    padding: 10px;
+    padding: 8px 15px;
     text-align: center;
     border-radius: 5px;
     text-decoration: none;
 }
 
-.cta-button:hover {
+.ad-container .cta-button:hover {
     background-color: #e67e22;
-}
-
-/* セクション */
-h2 {
-    font-size: 1.8rem;
-    color: #2980b9;
-    border-bottom: 2px solid #2980b9;
-    margin-bottom: 15px;
-    line-height: 1.5;
-}
-
-p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-    line-height: 1.8;
-}
-
-.highlight {
-    color: #e74c3c;
-    font-weight: bold;
 }
 
 /* 動画 */
@@ -144,7 +151,7 @@ p {
 
 /* フローティングバナー */
 .floating-banner {
-    background-color: #2980b9;
+    background-color: var(--main-color);
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -162,7 +169,7 @@ p {
 }
 
 .cta {
-    background-color: #f39c12;
+    background-color: var(--cta-color);
     padding: 15px;
     text-align: center;
     font-size: 1.2rem;
@@ -180,6 +187,7 @@ p {
     text-decoration: underline;
 }
 
+/* ブロック引用 */
 blockquote {
     background-color: #f5f5f5;
     border-left: 5px solid #007bff;
@@ -191,87 +199,16 @@ blockquote {
 
 blockquote p {
     margin: 0;
-    padding: 0;
 }
 
-/* 全体の行間をさらに広げる */
+/* 行間の設定 */
 body, p, blockquote {
-    line-height: 4.0; /* 行間をかなり大きくし、テキストが広がるようにする */
-}
-
-/* 各段落の間隔をもっと広げる */
-p {
-    margin-bottom: 60px; /* 各段落の下に大きなスペースを追加 */
-}
-
-/* サイドバー内の要素も広めに行間を設定 */
-.sidebar-wrapper, .sidebar {
-    line-height: 4.0; /* サイドバーも行間を極端に広げて余裕を持たせる */
-}
-
-/* コンテンツ間の余白を大きく */
-.content-container {
-    margin-bottom: 120px; /* コンテンツ間の間隔を極端に広げる */
-}
-
-/* セクションごとの余白をさらに広げる */
-.section {
-    margin-bottom: 80px; /* 各セクションの間に大きなスペースを追加 */
-}
-
-/* cta の中身に余白を与えずにスタイル */
-.cta p {
-    margin-bottom: 0; /* cta内の段落間に余白を追加しない */
-}
-
-/* ad-container の余白調整 */
-.ad-container {
-    padding: 12px; /* 内部の余白を完全に無くす */
-    margin-bottom: 0; /* 下部余白を無くす */
-    line-height: 1.2; /* 行間を縮めて詰める */
-}
-
-/* ad-info 内の余白調整 */
-.ad-container .ad-info {
-    padding: 5px 0; /* 上下の余白を狭くして詰める */
-    margin-bottom: 0; /* 下部余白を無くす */
-}
-
-/* ad-info 内のテキストの余白調整 */
-.ad-container .ad-info h3,
-.ad-container .ad-info p {
-    margi: 24px 12px; /* 上下の余白を最小限に調整 */
-    line-height: 1.2; /* 行間を縮めて詰める */
-}
-
-/* ボタンの余白調整 */
-.ad-container .cta-button {
-    padding: 8px 15px; /* ボタンの内側の余白を少なく */
-    margin: 5px; /* ボタンの上の余白を調整 */
-}
-
-/* ヘッダーの行間を狭く */
-header h1 {
-    line-height: 1.2; /* 行間を狭く */
-    margin-bottom: 10px; /* ヘッダーの下部余白を少し調整 */
-}
-
-/* セクション見出しの行間を狭く */
-section h2 {
-    line-height: 1.2; /* 行間を狭く */
-    margin-bottom: 15px; /* 見出しとコンテンツの間隔を調整 */
-}
-
-/* フローティングバナーの行間を狭く */
-.floating-banner p {
-    line-height: 1.2; /* 行間を狭く */
-    margin-top: 10px;
+    line-height: 4.0;
 }
 
 /* レスポンシブデザイン */
 @media (max-width: 768px) {
     .content-container {
-/*         flex-direction: column; */
         align-items: center;
     }
 
@@ -288,5 +225,9 @@ section h2 {
 
     .sidebar {
         margin-top: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem; /* スマホ用に調整 */
     }
 }
