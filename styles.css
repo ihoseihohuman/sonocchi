@@ -241,12 +241,13 @@ p {
 .ad-container .ad-info h3,
 .ad-container .ad-info p {
     margin-bottom: 5px; /* 上下の余白を最小限に調整 */
+    line-height: 1.2; /* 行間を縮めて詰める */
 }
 
 /* ボタンの余白調整 */
 .ad-container .cta-button {
     padding: 8px 15px; /* ボタンの内側の余白を少なく */
-    margin-top: 5px; /* ボタンの上の余白を調整 */
+    margin: 5px; /* ボタンの上の余白を調整 */
 }
 
 /* レスポンシブデザイン */
