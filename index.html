@@ -51,6 +51,18 @@
             background-color: #ffffff;
         }
 
+            .sidebar-wrapper {
+          width: 320px;
+          position: fixed;
+          top: 0;
+          right: 0;
+          height: 100%;
+          background-color: #fff; /* 白い背景 */
+          padding: 20px;
+          box-shadow: -3px 0 10px rgba(0, 0, 0, 0.2);
+          border-left: 3px solid #ddd; /* 左の枠線 */
+        }
+
         .sidebar iframe {
             width: 100%;
             height: 300px;
@@ -170,30 +182,33 @@
         </div>
     </div>
 
-    <!-- サイドバー -->
-    <div class="sidebar">
-       <h2>広告</h2>
-
-        <!-- 広告コンテンツ -->
-        <div class="ad-container">
-          <img src="https://via.placeholder.com/300x200" alt="広告画像">
-          <div class="ad-info">
-            <h3>商品名やサービス</h3>
-            <p>この商品はあなたの生活を便利にします。特別割引キャンペーン実施中！</p>
-            <a href="#" class="cta-button">詳細を見る</a>
-          </div>
-        </div>
+    <!-- サイドバーのラッパー -->
+  <div class="sidebar-wrapper">
+        <!-- サイドバー -->
+        <div class="sidebar">
+           <h2>広告</h2>
     
-        <!-- 追加の広告 -->
-        <div class="ad-container">
-          <img src="https://via.placeholder.com/300x200" alt="広告画像">
-          <div class="ad-info">
-            <h3>他のオファー</h3>
-            <p>限定オファー！今すぐチェック！</p>
-            <a href="#" class="cta-button">今すぐ見る</a>
-          </div>
+            <!-- 広告コンテンツ -->
+            <div class="ad-container">
+              <img src="https://via.placeholder.com/300x200" alt="広告画像">
+              <div class="ad-info">
+                <h3>商品名やサービス</h3>
+                <p>この商品はあなたの生活を便利にします。特別割引キャンペーン実施中！</p>
+                <a href="#" class="cta-button">詳細を見る</a>
+              </div>
+            </div>
+        
+            <!-- 追加の広告 -->
+            <div class="ad-container">
+              <img src="https://via.placeholder.com/300x200" alt="広告画像">
+              <div class="ad-info">
+                <h3>他のオファー</h3>
+                <p>限定オファー！今すぐチェック！</p>
+                <a href="#" class="cta-button">今すぐ見る</a>
+              </div>
+            </div>
         </div>
-    </div>
+      </div>
 </div>
 
 <!-- フローティングバナー -->
