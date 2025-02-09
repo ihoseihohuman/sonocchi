@@ -204,11 +204,6 @@ p {
     margin-bottom: 60px; /* 各段落の下に大きなスペースを追加 */
 }
 
-/* コメントブロックの間隔もさらに広げる */
-.reaction-container blockquote p {
-    margin-bottom: 50px; /* コメント間のスペースをさらに広げる */
-}
-
 /* サイドバー内の要素も広めに行間を設定 */
 .sidebar-wrapper, .sidebar {
     line-height: 4.0; /* サイドバーも行間を極端に広げて余裕を持たせる */
@@ -223,13 +218,6 @@ p {
 .section {
     margin-bottom: 80px; /* 各セクションの間に大きなスペースを追加 */
 }
-
-/* ビデオ要素も少し広げる */
-.video iframe {
-    margin-bottom: 80px; /* ビデオの下にも余白を追加して広げる */
-}
-
-
 
 /* レスポンシブデザイン */
 @media (max-width: 768px) {
