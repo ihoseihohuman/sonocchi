@@ -164,18 +164,29 @@
     const popup = document.getElementById("popup");
     const closeBtn = document.getElementById("popup-close");
     const adLink = 'https://www.cmoa.jp/title/310536/?';  // 広告リンクに置き換えてください
-
+    const ctaButton = document.querySelector('.popup .cta-button'); // 広告のボタンを取得
+    
     window.onload = function() {
         setTimeout(function() {
             popup.style.display = "flex";
         }, 3000);
     };
-
+    
+    // ポップアップを閉じる関数
+    function closePopup() {
+        popup.style.display = "none";
+    }
+    
+    // 「×」ボタンでポップアップを閉じる
     closeBtn.onclick = function() {
+        closePopup();
+    };
+    
+    // 広告リンクボタンをクリックしたときにもポップアップを閉じる
+    ctaButton.onclick = function() {
         // 広告リンクを新しいタブで開く
         window.open(adLink, '_blank');  // 新しいタブでリンクを開く
-
-        popup.style.display = "none";
+        closePopup();
     };
 
 </script>    
