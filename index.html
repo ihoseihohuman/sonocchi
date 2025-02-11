@@ -140,10 +140,45 @@
     </div>
 </div>
 
+<!-- ポップアップ広告 -->
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <span class="popup-close" id="popup-close">&times;</span>
+        <div class="ad-container">
+            <img src="/sonocchi/image/image1.jpg" alt="広告">
+            <div class="ad-info">
+                <h3>新商品登場！</h3>
+                <p>今すぐ購入して、あなたの生活に便利さを加えよう！</p>
+                <a href="https://dmm-imys.com/" class="cta-button" target="_blank">購入する</a>
+            </div>
+        </div>
+    </div>
+</div>
+    
 <!-- フローティングバナー -->
 <div class="floating-banner">
     <p>&copy; 2025 ボウリング情報ブログ</p>
 </div>
 
+<script>
+    const popup = document.getElementById("popup");
+    const closeBtn = document.getElementById("popup-close");
+    const adLink = 'https://dmm-imys.com/';  // 広告リンクに置き換えてください
+
+    window.onload = function() {
+        setTimeout(function() {
+            popup.style.display = "flex";
+        }, 3000);
+    };
+
+    closeBtn.onclick = function() {
+        // 広告リンクを新しいタブで開く
+        window.open(adLink, '_blank');  // 新しいタブでリンクを開く
+
+        popup.style.display = "none";
+    };
+
+</script>    
+    
 </body>
 </html>
