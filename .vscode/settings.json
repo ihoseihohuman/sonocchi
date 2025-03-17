@@ -1,0 +1,10 @@
+{
+    "editor.formatOnSave": true, // 保存時に自動的にコードを整形
+    "editor.defaultFormatter": "esbenp.prettier-vscode", // Prettier をフォーマッタとして指定
+    "files.autoSave": "onWindowChange", // ファイルを自動保存
+    "prettier.requireConfig": true, // Prettier の設定ファイルが必要なことを指定
+    "editor.detectIndentation": false, // 自動インデント検出を無効化
+    "files.insertFinalNewline": true, // 保存時に改行を追加
+    "files.trimTrailingWhitespace": true, // 行末の空白を削除
+    "cSpell.words": ["sonocchi"]
+}

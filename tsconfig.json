@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "@/*": ["src/*"] // src ディレクトリを @ でエイリアス
+        },
+        "target": "es5", // 必要に応じてターゲットを設定
+        "lib": ["dom", "esnext"], // 必要なライブラリを設定
+        "jsx": "react-jsx", // React 17以降の場合
+        "moduleResolution": "node", // モジュール解決の設定
+        "strict": true, // 厳密な型チェックを有効にする
+        "esModuleInterop": true, // ESモジュールとCommonJSの互換性を有効にする
+        "skipLibCheck": true, // 型定義のチェックをスキップ（依存関係の型エラーを回避）
+        "resolveJsonModule": true
+    },
+    "include": [
+        "src/**/*", // プロジェクトのソースコードを指定
+        "src/index.tsx",
+        "types/**/*" // 追加してtypesフォルダも含める
+    ] // other options
+}

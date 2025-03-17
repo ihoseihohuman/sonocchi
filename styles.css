@@ -50,7 +50,7 @@ header h1 {
     top: 0;
     z-index: 999;
     display: flex;
-    flex-direction: column;
+    flexdirection: column;
     height: fit-content;
     margin: 0px 36px;
     margin-bottom: 21px;
@@ -58,7 +58,7 @@ header h1 {
 
 .sidebar {
     display: flex;
-    flex-direction: column;
+    flexdirection: column;
     gap: 20px;
 }
 
@@ -71,7 +71,7 @@ header h1 {
 /* 広告 */
 .ad-container {
     display: flex;
-    flex-direction: column;
+    flexdirection: column;
     gap: 10px;
     background-color: #ecf0f1;
     border-radius: 8px;
@@ -195,8 +195,10 @@ blockquote p {
 }
 
 /* 全体の行間をさらに広げる */
-body, p, blockquote {
-    line-height: 4.0; /* 行間をかなり大きくし、テキストが広がるようにする */
+body,
+p,
+blockquote {
+    line-height: 4; /* 行間をかなり大きくし、テキストが広がるようにする */
 }
 
 /* 各段落の間隔をもっと広げる */
@@ -205,8 +207,9 @@ p {
 }
 
 /* サイドバー内の要素も広めに行間を設定 */
-.sidebar-wrapper, .sidebar {
-    line-height: 4.0; /* サイドバーも行間を極端に広げて余裕を持たせる */
+.sidebar-wrapper,
+.sidebar {
+    line-height: 4; /* サイドバーも行間を極端に広げて余裕を持たせる */
 }
 
 /* コンテンツ間の余白を大きく */
@@ -240,7 +243,7 @@ p {
 /* ad-info 内のテキストの余白調整 */
 .ad-container .ad-info h3,
 .ad-container .ad-info p {
-    margi: 24px 12px; /* 上下の余白を最小限に調整 */
+    margin: 24px 12px; /* 上下の余白を最小限に調整 */
     line-height: 1.2; /* 行間を縮めて詰める */
 }
 
@@ -306,11 +309,10 @@ section h2 {
     color: #e74c3c;
 }
 
-
 /* レスポンシブデザイン */
 @media (max-width: 768px) {
     .content-container {
-/*         flex-direction: column; */
+        /*         flexDirection: column; */
         align-items: center;
     }
 
