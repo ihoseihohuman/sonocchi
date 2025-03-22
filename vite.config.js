@@ -5,8 +5,8 @@ import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    base: './',
-    root: 'src',
+    base: '/', // GitHub Pagesでルートパスを使用
+    root: 'src', // srcディレクトリをルートとして設定
     plugins: [react()],
     resolve: {
         alias: {
@@ -16,21 +16,17 @@ export default defineConfig({
     json: {
         namedExports: true,
     },
-    publicDir: resolve(__dirname, 'public'),
+    publicDir: resolve(__dirname, 'public'), // publicディレクトリのパス
     build: {
-        // distフォルダに出力
-        outDir: resolve(__dirname, 'dist'),
-        // 存在しないときはフォルダを作成する
-        emptyOutDir: true,
-        copyPublicDir: true,
+        outDir: resolve(__dirname, 'dist'), // ビルド成果物をdistに出力
+        emptyOutDir: true, // ビルド前にdistディレクトリを空にする
+        copyPublicDir: true, // publicディレクトリの内容をコピー
         rollupOptions: {
-            // entry pointがあるindex.htmlのパス
-            input: {
-                '': resolve(__dirname, 'src/index.html'),
-            },
-            // bundle.jsを差し替えする
+            // inputを削除して、Viteのデフォルト設定に任せる
+            // Viteは自動的にsrc/index.htmlをエントリーポイントとして使用します
+            // outputの設定を変更したい場合のみ記述
             output: {
-                entryFileNames: 'assets/bundle.js',
+                entryFileNames: 'assets/bundle.js', // 出力するJavaScriptのファイル名
             },
         },
     },
