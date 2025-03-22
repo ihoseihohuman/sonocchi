@@ -23,7 +23,7 @@ jobs:
             - name: Setup Node.js
               uses: actions/setup-node@v3
               with:
-                  node-version: '16' # 必要に応じてバージョンを変更
+                  node-version: '20' # 必要に応じてバージョンを変更
 
             # 依存関係のインストール
             - name: Install dependencies
