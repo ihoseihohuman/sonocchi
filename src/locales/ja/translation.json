@@ -12,7 +12,7 @@
                     "ad": {
                         "imageTitle": "健康おやつの新定番！",
                         "description": "今話題の健脳食！おやつやおつまみに、いつでもご家族で楽しめます。",
-                        "imageSrc": "/assets/images/image1.jpg",
+                        "imageSrc": "image1",
                         "ctaText": "購入する",
                         "ctaLink": "https://shop.kikusuigold.com/?pid=181490306"
                     }
@@ -23,7 +23,7 @@
                     "ad": {
                         "imageTitle": "プロモーション中！",
                         "description": "お得なキャンペーンをチェック！今だけの特典がいっぱい。",
-                        "imageSrc": "/assets/images/image2.jpg",
+                        "imageSrc": "image2",
                         "ctaText": "詳細はこちら",
                         "ctaLink": "https://games.dmm.co.jp/detail/MistTrainGirlsX"
                     }
@@ -34,7 +34,7 @@
                     "ad": {
                         "imageTitle": "新商品登場！",
                         "description": "今すぐ購入して、あなたの生活に便利さを加えよう！",
-                        "imageSrc": "/assets/images/image3.jpg",
+                        "imageSrc": "image3",
                         "ctaText": "購入する",
                         "ctaLink": "https://dmm-imys.com/"
                     }
@@ -49,7 +49,7 @@
                     "ad": {
                         "imageTitle": "新作登場！",
                         "description": "今なら会員登録で70％OFF！",
-                        "imageSrc": "/assets/images/image4.gif",
+                        "imageSrc": "image4",
                         "ctaText": "購入する",
                         "ctaLink": "https://www.cmoa.jp/title/310536/?"
                     }
@@ -69,7 +69,7 @@
                     "ad": {
                         "imageTitle": "健康おやつの新定番！",
                         "description": "今話題の健脳食！おやつやおつまみに、いつでもご家族で楽しめます。",
-                        "imageSrc": "/assets/images/image1.jpg",
+                        "imageSrc": "image1",
                         "ctaText": "購入する",
                         "ctaLink": "https://shop.kikusuigold.com/?pid=181490306"
                     }

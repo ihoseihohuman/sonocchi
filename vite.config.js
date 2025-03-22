@@ -5,8 +5,8 @@ import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    base: '/', // GitHub Pagesでルートパスを使用
-    root: 'src', // srcディレクトリをルートとして設定
+    base: '/sonocchi/',
+    root: 'src', // プロジェクトのルートを指定
     plugins: [react()],
     resolve: {
         alias: {

@@ -1,3 +1,4 @@
+import images from '@/assets/images';
 import AdContainer from '@/components/molecules/ad_container';
 import Video from '@/components/molecules/video';
 import { Box, Stack, Typography } from '@mui/material';
@@ -21,9 +22,11 @@ export default function Body() {
                 }}
             >
                 <AdContainer
-                    imageSrc={t(
-                        'sonocchi.content.sections.section4.ad.imageSrc'
-                    )}
+                    imageSrc={
+                        images[
+                            t('sonocchi.content.sections.section4.ad.imageSrc')
+                        ]
+                    }
                     imageTitle={t(
                         'sonocchi.content.sections.section4.ad.imageTitle'
                     )}

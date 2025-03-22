@@ -1,3 +1,4 @@
+import images from '@/assets/images';
 import AdContainer from '@/components/molecules/ad_container';
 import CloseIcon from '@mui/icons-material/Close';
 import { Box, IconButton } from '@mui/material';
@@ -27,9 +28,11 @@ export default function Body(props: BodyProps) {
                 }}
             >
                 <AdContainer
-                    imageSrc={t(
-                        'sonocchi.content.sections.section5.ad.imageSrc'
-                    )}
+                    imageSrc={
+                        images[
+                            t('sonocchi.content.sections.section5.ad.imageSrc')
+                        ]
+                    }
                     imageTitle={t(
                         'sonocchi.content.sections.section5.ad.imageTitle'
                     )}
