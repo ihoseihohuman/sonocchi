@@ -33,5 +33,5 @@ jobs:
               with:
                   branch: gh-pages # デプロイ先のブランチ
                   folder: dist # デプロイするディレクトリ
-            - env:
-              GITHUB_TOKEN: ${{ secrets.GH_TOKEN }} # 作成した PAT を環境変数として渡す
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GH_TOKEN }} # 作成した PAT を環境変数として渡す
