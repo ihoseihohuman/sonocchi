@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
     push:
         branches:
-            - develop
+            - develop # またはmainなどデプロイしたいブランチに変更
 
 jobs:
     deploy:
@@ -18,28 +18,21 @@ jobs:
         steps:
             - name: Checkout
               uses: actions/checkout@v4
-            # Node.jsのセットアップ
+
             - name: Setup Node.js
               uses: actions/setup-node@v3
               with:
-                  node-version: '20' # 必要に応じてバージョンを変更
-            # 依存関係のインストール
-            - name: Install dependencies
+                  node-version: '20' # 必要に応じてNode.jsのバージョンを指定
+            - name: Install Dependencies
               run: |
                   yarn install
-            # Viteビルドの実行
-            - name: Build project
+            - name: Build
               run: |
                   yarn build
-            # GitHub Pages用のセットアップ
-            - name: Setup Pages
-              uses: actions/configure-pages@v4
-            # ビルド成果物をアップロード
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v3
               with:
-                  path: ./dist # Viteのビルド成果物が格納されるディレクトリ
-            # GitHub Pagesにデプロイ
+                  path: ./dist # distディレクトリをアップロード
             - name: Deploy to GitHub Pages
               id: deployment
               uses: actions/deploy-pages@v4
