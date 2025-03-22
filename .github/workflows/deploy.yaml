@@ -33,3 +33,4 @@ jobs:
               with:
                   branch: gh-pages # デプロイ先のブランチ
                   folder: dist # デプロイするディレクトリ
+                  token: ${{ secrets.GH_TOKEN }} # GitHub Secretsに保存したトークン
