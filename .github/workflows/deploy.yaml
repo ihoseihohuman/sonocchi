@@ -11,7 +11,7 @@ jobs:
         steps:
             # リポジトリをチェックアウト
             - name: Checkout code
-              uses: actions/checkout@v3 # actions/checkoutのバージョンをv3に変更
+              uses: actions/checkout@v3 # actions/checkoutのバージョンをv3に更新
 
             # Node.jsのセットアップ
             - name: Set up Node.js
@@ -34,4 +34,4 @@ jobs:
                   branch: gh-pages # デプロイ先のブランチ
                   folder: dist # デプロイするディレクトリ
               env:
-                  GITHUB_TOKEN: ${{ secrets.GH_TOKEN }} # 作成したPATを環境変数として渡す
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # デフォルトのGITHUB_TOKENを使用
