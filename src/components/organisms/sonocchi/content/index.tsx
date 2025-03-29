@@ -20,6 +20,7 @@ const Content: React.FC<ContentProps> = (props) => {
                 backgroundColor: '#fff',
                 borderRadius: 2,
                 boxShadow: 1,
+                marginRight: '8px',
             }}
         >
             <Typography

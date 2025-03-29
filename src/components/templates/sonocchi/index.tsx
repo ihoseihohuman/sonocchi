@@ -19,7 +19,7 @@ export default function MainTemplate(props: MainTemplateProps) {
                 display="flex"
                 justifyContent="space-between"
                 marginY={2}
-                sx={{ padding: '20px' }}
+                sx={{ padding: '8px' }}
             >
                 {children}
             </Box>

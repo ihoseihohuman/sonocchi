@@ -1,16 +1,13 @@
-import AdContainer from '@/components/molecules/ad_container';
 import { AdProps } from '@/types';
 import { Box, Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
+import AdContainer from '../ad_container';
 
-type SidebarProps = {
+type BottomBarProps = {
     ads: AdProps[];
 };
 
-/**
- * サイドバー
- */
-export function Sidebar(props: SidebarProps) {
+export default function BottomBar(props: BottomBarProps) {
     const { t } = useTranslation();
     const { ads } = props;
 
@@ -47,5 +44,3 @@ export function Sidebar(props: SidebarProps) {
         </Box>
     );
 }
-
-export default { Sidebar };
