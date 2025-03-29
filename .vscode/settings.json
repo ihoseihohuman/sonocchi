@@ -6,5 +6,12 @@
     "editor.detectIndentation": false, // 自動インデント検出を無効化
     "files.insertFinalNewline": true, // 保存時に改行を追加
     "files.trimTrailingWhitespace": true, // 行末の空白を削除
-    "cSpell.words": ["sonocchi"]
+    "cSpell.words": [
+        "misttrain",
+        "Mysteria",
+        "Natto",
+        "Sodatekata",
+        "sonocchi",
+        "syokubutu"
+    ]
 }
