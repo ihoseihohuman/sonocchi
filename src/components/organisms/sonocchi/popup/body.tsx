@@ -1,48 +1,36 @@
 import images from '@/assets/images';
 import AdContainer from '@/components/molecules/ad_container';
-import CloseIcon from '@mui/icons-material/Close';
-import { Box, IconButton } from '@mui/material';
+import { Box } from '@mui/material';
 import { t } from 'i18next';
 
 type BodyProps = {
-    onClose: VoidFunction;
+    onClick?: () => void;
 };
 
 export default function Body(props: BodyProps) {
-    const { onClose } = props;
+    const { onClick } = props;
     return (
-        <>
-            <IconButton
-                edge="end"
-                color="inherit"
-                onClick={onClose}
-                aria-label="close"
-            >
-                <CloseIcon />
-            </IconButton>
-            <Box
-                sx={{
-                    alignSelf: 'center',
-                    display: 'flex',
-                    flexDirection: 'column',
-                }}
-            >
-                <AdContainer
-                    imageSrc={
-                        images[
-                            t('sonocchi.content.sections.section5.ad.imageSrc')
-                        ]
-                    }
-                    imageTitle={t(
-                        'sonocchi.content.sections.section5.ad.imageTitle'
-                    )}
-                    description={t(
-                        'sonocchi.content.sections.section5.ad.description'
-                    )}
-                    ctaLink={t('sonocchi.content.sections.section5.ad.ctaLink')}
-                    ctaText={t('sonocchi.content.sections.section5.ad.ctaText')}
-                />
-            </Box>
-        </>
+        <Box
+            sx={{
+                alignSelf: 'center',
+                display: 'flex',
+                flexDirection: 'column',
+            }}
+        >
+            <AdContainer
+                imageSrc={
+                    images[t('sonocchi.content.sections.section5.ad.imageSrc')]
+                }
+                imageTitle={t(
+                    'sonocchi.content.sections.section5.ad.imageTitle'
+                )}
+                description={t(
+                    'sonocchi.content.sections.section5.ad.description'
+                )}
+                ctaLink={t('sonocchi.content.sections.section5.ad.ctaLink')}
+                ctaText={t('sonocchi.content.sections.section5.ad.ctaText')}
+                onClick={onClick}
+            />
+        </Box>
     );
 }

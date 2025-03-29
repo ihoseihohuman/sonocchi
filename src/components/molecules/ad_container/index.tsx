@@ -9,14 +9,17 @@ type AdContainerProps = {
     description: string;
     ctaLink: string;
     ctaText: string;
+    onClick?: () => void;
 };
 
 export default function AdContainer(props: AdContainerProps) {
-    const { imageSrc, imageTitle, description, ctaLink, ctaText } = props;
+    const { imageSrc, imageTitle, description, ctaLink, ctaText, onClick } =
+        props;
     const { t } = useTranslation();
     const handleClick = useCallback(() => {
         window.open(ctaLink, '_blank');
-    }, [ctaLink]);
+        onClick && onClick();
+    }, [ctaLink, onClick]);
 
     return (
         <Box

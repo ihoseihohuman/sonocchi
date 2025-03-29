@@ -13,7 +13,8 @@ type MainTemplateProps = {
 export default function MainTemplate(props: MainTemplateProps) {
     const { children, title } = props;
     return (
-        <Box sx={{ backgroundColor: '#f0f0f0' }}>
+        <Box sx={{ backgroundColor: '#f0f0f0', position: 'relative' }}>
+            <Popup />
             <Header title={title} />
             <Box
                 display="flex"
@@ -23,7 +24,6 @@ export default function MainTemplate(props: MainTemplateProps) {
             >
                 {children}
             </Box>
-            <Popup />
         </Box>
     );
 }
