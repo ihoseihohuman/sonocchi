@@ -76,6 +76,11 @@
                 }
             },
             "footer": "園田陽久選手の今後の活躍に注目しよう！"
+        },
+        "popup": {
+            "title": "お得な情報をゲット！",
+            "ctaText": "詳細はこちら",
+            "ctaLink": "https://shop.kikusuigold.com/?pid=181490306"
         }
     }
 }
