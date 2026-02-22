@@ -11,6 +11,25 @@ export default function Body() {
             </Typography>
             <Box
                 sx={{
+                    background: '#d9d9d9',
+                    borderRadius: '16px',
+                }}
+            >
+                <Typography lineHeight={4} sx={{ px: 2 }}>
+                    {(
+                        t('sonocchi.content.sections.section5.reactions', {
+                            returnObjects: true,
+                        }) as string[]
+                    ).map((reaction: string, index: number) => (
+                        <div key={index}>
+                            <em>"{reaction}"</em>
+                        </div>
+                    ))}
+                </Typography>
+            </Box>
+            <Box
+                sx={{
+                    paddingTop: '32px',
                     alignSelf: 'center',
                     display: 'flex',
                     flexDirection: 'column',

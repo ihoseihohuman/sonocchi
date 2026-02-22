@@ -29,7 +29,7 @@ export default function BottomBar(props: BottomBarProps) {
                 variant="h2"
                 sx={{ color: '#2980b9', marginBottom: '10px' }}
             >
-                {t('related_ads')}
+                {t('common.related_ads')}
             </Typography>
             {ads.map((ad, index) => (
                 <AdContainer

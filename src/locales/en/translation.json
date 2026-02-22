@@ -82,9 +82,26 @@
             "ctaText": "Learn More",
             "ctaLink": "https://shop.kikusuigold.com/?pid=181490306",
             "dummyLink": "https://harem-ai.com/?ref=328"
+        },
+        "side_bar": {
+            "ad1": {
+                "imageSrc": "pandaNatto",
+                "title": "The New Standard for Healthy Snacks!",
+                "description": "The trending brain food! Enjoy it anytime with your family as a snack or appetizer.",
+                "ctaLink": "https://shop.kikusuigold.com/?pid=181490306",
+                "ctaText": "Buy Now"
+            },
+            "ad2": {
+                "imageSrc": "misttrainGirlsX",
+                "title": "On Promotion!",
+                "description": "Check out the great campaign! Limited-time offers are available now.",
+                "ctaLink": "https://games.dmm.co.jp/detail/MistTrainGirlsX",
+                "ctaText": "Learn More"
+            }
         }
     },
     "common": {
-        "switchLanguage": "Switch Language"
+        "switchLanguage": "Switch Language",
+        "related_ads": "Related Ads"
     }
 }

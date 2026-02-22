@@ -52,7 +52,9 @@ const Content: React.FC<ContentProps> = (props) => {
             <Section4 />
             <Section5 />
             <Box sx={{ textAlign: 'center', marginTop: 4 }}>
-                <Typography variant="h6">{t('sonocchi.footer')}</Typography>
+                <Typography variant="h6">
+                    {t('sonocchi.content.footer')}
+                </Typography>
             </Box>
         </Box>
     );
