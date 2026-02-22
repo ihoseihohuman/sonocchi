@@ -3,9 +3,9 @@ import React from 'react';
 const AudioPlayer: React.FC = () => {
     return (
         <div>
-            <audio controls>
+            <audio controls autoPlay muted>
                 <source
-                    src="/src/assets/musics/Perfect_Game_Professor.mp3"
+                    src="/sonocchi/musics/Perfect_Game_Professor.mp3"
                     type="audio/mpeg"
                 />
                 お使いのブラウザはオーディオ要素をサポートしていません。
