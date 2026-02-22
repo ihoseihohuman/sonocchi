@@ -83,5 +83,8 @@
             "ctaLink": "https://shop.kikusuigold.com/?pid=181490306",
             "dummyLink": "https://harem-ai.com/?ref=328"
         }
+    },
+    "common": {
+        "switchLanguage": "言語を切り替える"
     }
 }

@@ -1,52 +1,90 @@
 {
-    "header": "A Summary of Yoshihisa Sonoda's Skill and Achievements!!!!!",
-    "introduction": "This time, we introduce the impressive bowling player Yoshihisa Sonoda, based in Aichi Prefecture. He has achieved great results in various tournaments in recent years, attracting attention. Let's take a quick look at his accomplishments and appeal.",
-    "sections": {
-        "section1": {
-            "title": "1. MVP at the 23rd Chubu Japan Championship",
-            "content": "In June 2023, at the 23rd Chubu Japan Championship, the Nagoya Branch B Team won the championship. Yoshihisa Sonoda was selected as the MVP of the event, proving his skills. He contributed to the team's victory and also achieved remarkable results as an individual."
+    "sonocchi": {
+        "header": {
+            "title": "Summary of Haruhisa Sonoda's Skills and Achievements"
         },
-        "section2": {
-            "title": "2. 2024 Tokai Region Senior Bowling Championship",
-            "content": "In January 2024, at the 18th Tokai Region Senior Bowling Championship held in Mie Prefecture, Sonoda placed 3rd in the men's championship final. He demonstrated top-level competitive skills in the senior division, drawing even more attention."
+        "content": {
+            "introduction": "This time, we introduce Haruhisa Sonoda, a skilled bowling player based in Aichi Prefecture. He has achieved excellent results in numerous tournaments in recent years and is attracting attention. Let's take a quick look back at his achievements and charm.",
+            "sections": {
+                "section1": {
+                    "title": "1. MVP at the 23rd Central Japan Championship",
+                    "text": "In the 23rd Central Japan Championship held in June 2023, the Nagoya Branch B Team won the championship. Sonoda was selected as the MVP, proving his skills. He contributed as a team member and achieved remarkable results individually.",
+                    "ad": {
+                        "imageTitle": "The New Standard for Healthy Snacks!",
+                        "description": "The trending brain food! Enjoy it anytime with your family as a snack or appetizer.",
+                        "imageSrc": "pandaNatto",
+                        "ctaText": "Buy Now",
+                        "ctaLink": "https://shop.kikusuigold.com/?pid=181490306"
+                    }
+                },
+                "section2": {
+                    "title": "2. 2024 Tokai Region Senior Bowling Championship",
+                    "text": "In the 18th Tokai Region Senior Bowling Championship held in Mie Prefecture in January 2024, Sonoda placed third in the men's championship match. He demonstrated top-level competitiveness in the senior division, attracting even more attention.",
+                    "ad": {
+                        "imageTitle": "On Promotion!",
+                        "description": "Check out the great campaign! Limited-time offers are available now.",
+                        "imageSrc": "misttrainGirlsX",
+                        "ctaText": "Learn More",
+                        "ctaLink": "https://games.dmm.co.jp/detail/MistTrainGirlsX"
+                    }
+                },
+                "section3": {
+                    "title": "3. Success at the National Corporate Branch Championship",
+                    "text": "In the 48th National Corporate Branch Championship held in March 2022, the Nagoya Branch A Team, to which Sonoda belongs, won the championship. Sonoda's contribution as a team member was a major topic.",
+                    "ad": {
+                        "imageTitle": "New Product Launch!",
+                        "description": "Buy now and add convenience to your life!",
+                        "imageSrc": "irisMysteria",
+                        "ctaText": "Buy Now",
+                        "ctaLink": "https://dmm-imys.com/"
+                    }
+                },
+                "section4": {
+                    "title": "4. The Moment of a Perfect Game",
+                    "text": "Another highlight is the moment Sonoda achieved a perfect game. With overwhelming skill and mental strength, he delivered an impressive performance that captivated fans. Check out the emotional moment in the video below!",
+                    "video": {
+                        "title": "Haruhisa Sonoda's Perfect Game",
+                        "src": "https://www.youtube.com/embed/FfNa8exJuhg"
+                    },
+                    "ad": {
+                        "imageTitle": "New Release!",
+                        "description": "Sign up now and get 70% off!",
+                        "imageSrc": "syokubutuNoSodatekata",
+                        "ctaText": "Buy Now",
+                        "ctaLink": "https://www.cmoa.jp/title/310536/?"
+                    }
+                },
+                "section5": {
+                    "title": "5. Online Reactions",
+                    "text": "What are the online reactions?",
+                    "reactions": [
+                        "If only teaching math was this good...",
+                        "As expected of the heavy-smoking alien!",
+                        "Immortal as always...!",
+                        "As expected of an alien",
+                        "If only he was this good at table tennis too",
+                        "The comment section is full of Gojo fans lol",
+                        "This is a surprise. I like this old man, he makes bowling perfect!"
+                    ],
+                    "ad": {
+                        "imageTitle": "The New Standard for Healthy Snacks!",
+                        "description": "The trending brain food! Enjoy it anytime with your family as a snack or appetizer.",
+                        "imageSrc": "pandaNatto",
+                        "ctaText": "Buy Now",
+                        "ctaLink": "https://shop.kikusuigold.com/?pid=181490306"
+                    }
+                }
+            },
+            "footer": "Stay tuned for Haruhisa Sonoda's future achievements!"
         },
-        "section3": {
-            "title": "3. Performance in the National Corporate Team Championship",
-            "content": "In March 2022, at the 48th National Corporate Team Championship, Yoshihisa Sonoda's Nagoya Branch A Team won the championship. Sonoda played a key role in the team's success, which became a major topic of conversation."
-        },
-        "section4": {
-            "title": "4. The Moment He Achieved a Perfect Game",
-            "content": "Another highlight is the moment when Sonoda achieved a perfect game. With outstanding technique and mental strength, he delivered a stunning performance that captivated fans. You can watch this emotional moment in the video below!"
-        },
-        "section5": {
-            "title": "5. Reactions on the Internet",
-            "content": "What has the online reaction been like?"
+        "popup": {
+            "title": "Get Great Deals!",
+            "ctaText": "Learn More",
+            "ctaLink": "https://shop.kikusuigold.com/?pid=181490306",
+            "dummyLink": "https://harem-ai.com/?ref=328"
         }
     },
-    "cta": "Let's look forward to Yoshihisa Sonoda's future achievements!",
-    "ads": {
-        "ad1": {
-            "title": "The New Standard for Healthy Snacks!",
-            "content": "The trending brain-boosting snack! Enjoy it anytime with your family as a snack or appetizer.",
-            "link": "https://shop.kikusuigold.com/?pid=181490306"
-        },
-        "ad2": {
-            "title": "Promotion Ongoing!",
-            "content": "Check out the great campaigns! Lots of special offers available now.",
-            "link": "https://games.dmm.co.jp/detail/MistTrainGirlsX"
-        },
-        "ad3": {
-            "title": "New Products Available!",
-            "content": "Buy now and add convenience to your life!",
-            "link": "https://dmm-imys.com/"
-        },
-        "ad4": {
-            "title": "New Releases!",
-            "content": "Sign up now for a 70% OFF deal!",
-            "link": "https://www.cmoa.jp/title/310536/?"
-        }
-    },
-    "footer": {
-        "copyright": "© 2025 Bowling Information Blog"
+    "common": {
+        "switchLanguage": "Switch Language"
     }
 }

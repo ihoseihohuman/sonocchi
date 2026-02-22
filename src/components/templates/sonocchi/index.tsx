@@ -21,7 +21,7 @@ export default function MainTemplate(props: MainTemplateProps) {
                 justifyContent="space-between"
                 marginY={2}
                 sx={{ padding: '8px' }}
-            >
+            >   
                 {children}
             </Box>
         </Box>

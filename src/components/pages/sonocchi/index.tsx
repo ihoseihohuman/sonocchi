@@ -4,14 +4,14 @@ import Sidebar from '@/components/organisms/sonocchi/side_bar';
 import MainTemplate from '@/components/templates/sonocchi';
 import SonocchiPageBgm from '@/pages/sonocchi';
 import { Box } from '@mui/material';
+import { Button } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 
 export default function HomePage() {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     return (
         <MainTemplate title={t('sonocchi.header.title')}>
-            <SonocchiPageBgm />
             <Content />
             <Sidebar />
         </MainTemplate>
