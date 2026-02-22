@@ -1,12 +1,11 @@
 import AudioPlayer from '../../components/molecules/audio_player';
 
-const SonocchiPage: React.FC = () => {
+const SonocchiPageBgm: React.FC = () => {
     return (
         <div>
-            {/* ...existing content... */}
             <AudioPlayer />
         </div>
     );
 };
 
-export default SonocchiPage;
+export default SonocchiPageBgm;
