@@ -18,7 +18,7 @@ export default defineConfig({
     },
     publicDir: resolve(__dirname, 'public'), // publicディレクトリのパス
     build: {
-        outDir: resolve(__dirname, 'dist'), // ビルド成果物をdistに出力
+        outDir: resolve(__dirname, '../../dist'), // モノレポ共通のルートdistに出力
         emptyOutDir: true, // ビルド前にdistディレクトリを空にする
         copyPublicDir: true, // publicディレクトリの内容をコピー
         rollupOptions: {

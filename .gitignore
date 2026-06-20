@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+# game exe build artifacts
+apps/game/sonotchi-bowl.exe
+apps/game/exe/Launcher.cs
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

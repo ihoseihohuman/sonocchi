@@ -1,0 +1,204 @@
+:root {
+    --accent: #ffcd3c;
+    --accent2: #ff5a5f;
+    --bg1: #1a1030;
+    --bg2: #2d1b54;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,
+body,
+#root {
+    min-height: 100%;
+}
+body {
+    font-family: 'Segoe UI', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif;
+    background: radial-gradient(circle at 50% 0%, var(--bg2), var(--bg1));
+    color: #fff;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 14px;
+}
+h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 2px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 2px 12px rgba(255, 205, 60, 0.3);
+}
+.sub {
+    font-size: 12px;
+    color: #c9b8ff;
+    margin-bottom: 10px;
+}
+
+.game-wrap {
+    position: relative;
+    width: 340px;
+    max-width: 100%;
+}
+.game-canvas {
+    width: 100%;
+    display: block;
+    border-radius: 14px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5), inset 0 0 0 2px rgba(255, 255, 255, 0.06);
+    background: #000;
+    touch-action: none;
+}
+
+.hud {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 14px;
+    gap: 8px;
+    width: 340px;
+    max-width: 100%;
+}
+.hud .box {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 6px 10px;
+    text-align: center;
+    flex: 1;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.hud .box b {
+    display: block;
+    font-size: 18px;
+    color: var(--accent);
+}
+.hud .box span {
+    font-size: 10px;
+    color: #bbb;
+}
+
+.frames {
+    display: flex;
+    gap: 3px;
+    margin-bottom: 10px;
+    width: 340px;
+    max-width: 100%;
+    font-size: 10px;
+}
+.frame {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.frame.active {
+    outline: 2px solid var(--accent);
+}
+.frame .fn {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1px;
+    color: #aaa;
+    font-size: 8px;
+}
+.frame .rolls {
+    display: flex;
+    height: 20px;
+}
+.frame .rolls div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+}
+.frame.f10 .rolls div {
+    font-size: 9px;
+}
+.frame .tot {
+    text-align: center;
+    font-weight: bold;
+    font-size: 11px;
+    padding: 1px;
+    color: #fff;
+    min-height: 14px;
+}
+
+.msg {
+    position: absolute;
+    top: 38%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 900;
+    pointer-events: none;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.msg.dim {
+    background: none;
+    -webkit-text-fill-color: #bbb;
+    color: #bbb;
+}
+.msg.show {
+    animation: pop 0.5s;
+}
+@keyframes pop {
+    0% {
+        transform: scale(0.4);
+    }
+    60% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.controls {
+    font-size: 12px;
+    color: #c9b8ff;
+    text-align: center;
+    line-height: 1.6;
+    margin-top: 4px;
+    min-height: 34px;
+}
+.btn-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+button {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 18px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #1a1030;
+    background: linear-gradient(180deg, var(--accent), #f5a623);
+    box-shadow: 0 4px 0 #b67d10;
+    transition: transform 0.05s;
+}
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #b67d10;
+}
+button.sound {
+    padding: 10px 12px;
+}
