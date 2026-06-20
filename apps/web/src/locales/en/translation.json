@@ -102,6 +102,7 @@
     },
     "common": {
         "switchLanguage": "Switch Language",
-        "related_ads": "Related Ads"
+        "related_ads": "Related Ads",
+        "play_game": "Play Sonotchi Bowl"
     }
 }

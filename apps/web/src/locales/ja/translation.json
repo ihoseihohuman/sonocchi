@@ -102,6 +102,7 @@
     },
     "common": {
         "switchLanguage": "言語を切り替える",
-        "related_ads": "関連広告"
+        "related_ads": "関連広告",
+        "play_game": "そのっちボウルで遊ぶ"
     }
 }
