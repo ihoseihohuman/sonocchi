@@ -177,6 +177,7 @@ export class GameEngine {
     }
     private onPointerDown = (e: PointerEvent): void => {
         sfx.unlock();
+        if (this.started) sfx.ensureBgm(); // 自動再生がブロックされていた場合の再試行
         if (!this.started || this.gameOver || this.state !== 'ready') return;
         const p = this.canvasPos(e);
         if (Math.hypot(p.x - this.ball.x, p.y - this.ball.y) < this.ball.r * 2.6) {

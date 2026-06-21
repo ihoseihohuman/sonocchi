@@ -105,6 +105,10 @@ class Sfx {
     stopBgm(): void {
         if (this.bgm) this.bgm.pause();
     }
+    // 自動再生がブロックされても、次のユーザー操作で再生を再試行するための関数。
+    ensureBgm(): void {
+        if (this.bgmUrl) this.startBgm(this.bgmUrl);
+    }
     click(): void {
         this.tone(520, 0.07, 'square', 0.25);
         this.tone(780, 0.06, 'square', 0.15, null, 0.02);
