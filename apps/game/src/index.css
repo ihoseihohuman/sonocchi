@@ -202,3 +202,32 @@ button:active {
 button.sound {
     padding: 10px 12px;
 }
+.upload-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-top: 8px;
+}
+button.upload {
+    background: linear-gradient(180deg, #7c5cff, #5a3fd6);
+    color: #fff;
+    box-shadow: 0 4px 0 #3f2aa8;
+    font-size: 14px;
+    padding: 9px 16px;
+}
+button.upload:active {
+    box-shadow: 0 2px 0 #3f2aa8;
+}
+button.reset-face {
+    background: rgba(255, 255, 255, 0.14);
+    color: #fff;
+    box-shadow: none;
+    font-size: 12px;
+    padding: 9px 12px;
+}
+.upload-note {
+    font-size: 11px;
+    color: #c9b8ff;
+    margin-top: 6px;
+    text-align: center;
+}

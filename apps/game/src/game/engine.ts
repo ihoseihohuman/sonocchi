@@ -78,6 +78,25 @@ export class GameEngine {
         window.removeEventListener('pointerup', this.onPointerUp);
     }
 
+    // アップロードされた画像をそのっちの顔アイコンに差し替える(無効な値で似顔絵に戻す)
+    setFaceImage(src: string | null): void {
+        if (!src) {
+            this.sonImg = null;
+            this.sonImgReady = false;
+            return;
+        }
+        const im = new Image();
+        im.onload = () => {
+            this.sonImg = im;
+            this.sonImgReady = true;
+        };
+        im.onerror = () => {
+            this.sonImg = null;
+            this.sonImgReady = false;
+        };
+        im.src = src;
+    }
+
     start(): void {
         this.started = true;
         // BGM(30秒クリップをループ再生)。start はボタン操作から呼ばれるので自動再生制限を回避できる。
