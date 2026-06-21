@@ -80,6 +80,8 @@ export class GameEngine {
 
     start(): void {
         this.started = true;
+        // BGM(30秒クリップをループ再生)。start はボタン操作から呼ばれるので自動再生制限を回避できる。
+        sfx.startBgm(`${import.meta.env.BASE_URL || '/'}Perfect_Game_Professor.mp3`);
         this.resetGame();
     }
 

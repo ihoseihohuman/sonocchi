@@ -7,6 +7,8 @@ class Sfx {
     private master: GainNode | null = null;
     private on = true;
     private rollNodes: RollNodes | null = null;
+    private bgm: HTMLAudioElement | null = null;
+    private bgmUrl: string | null = null;
 
     private ctxOK(): boolean {
         if (!this.ac) {
@@ -77,10 +79,31 @@ class Sfx {
     }
     setOn(v: boolean): void {
         this.on = v;
-        if (!v) this.stopRoll();
+        if (!v) {
+            this.stopRoll();
+            this.stopBgm();
+        } else if (this.bgmUrl) {
+            this.startBgm(this.bgmUrl);
+        }
     }
     isOn(): boolean {
         return this.on;
+    }
+    // ループBGM(HTMLAudioElement)。ユーザー操作後に呼ぶこと(自動再生制限のため)。
+    startBgm(url: string): void {
+        this.bgmUrl = url;
+        if (!this.on) return;
+        if (!this.bgm) {
+            this.bgm = new Audio(url);
+            this.bgm.loop = true;
+            this.bgm.volume = 0.35;
+        }
+        void this.bgm.play().catch(() => {
+            /* 自動再生がブロックされた場合は次の操作で再試行される */
+        });
+    }
+    stopBgm(): void {
+        if (this.bgm) this.bgm.pause();
     }
     click(): void {
         this.tone(520, 0.07, 'square', 0.25);
